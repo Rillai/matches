@@ -1,0 +1,123 @@
+.btn-container {
+    display: none;
+}
+
+.btn-burger {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    padding: 0px 8px;
+    cursor: pointer;
+    background: #0C79A2;
+    border-radius: 50%;
+}
+
+.btn-burger span {
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.btn-burger span::before, .btn-burger span::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.btn-burger span::before {
+    top: 8px;
+}
+
+.btn-burger span::after {
+    bottom: 8px;
+}
+
+.btn-burger:hover {
+    border: 1px solid #fff;
+}
+
+.burger-list {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+    background: #353942;
+}
+
+.burger-list-active {
+    width: 85%;
+}
+
+.go-back {
+    cursor: pointer;
+}
+
+.burger-list nav {
+    transition: all 0.2s ease 0s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.burger-list .nav-mobile  a {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 7px 0;
+}
+
+.burger-list .nav-mobile  a:hover {
+    color: #1E99C7
+}
+
+.burger-list nav a.active {
+    color: #1E99C7;
+}
+
+.title_nav_mobile {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f4f7fbbb;
+}
+
+.title_nav_mobile span {
+    font-size: 18px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.transform {
+    transform: translate(-300px);
+    transition: all 0.3s ease 0s;
+}
+
+.burger-list-active .transform {
+    transition: all 0.2s ease 0.4s;
+    transform: translate(0px);
+}
+
+.nav-mobile {
+    padding: 11px 18px;
+}
+
+@media (max-width: 400px) {
+    .btn-container {
+        display: unset;
+    }
+}

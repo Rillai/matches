@@ -1,0 +1,65 @@
+.matchesTabs {
+    margin: 0 18px 16px 13px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.button-container button {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 0;
+    padding: 12px 16px;
+    transition: none;
+    color: #1E99C7;
+}
+
+.button-container button.active {
+    color: #353942;
+    border-radius: 2px 0px 0px 2px;
+    border-bottom: 2px solid #1E99C7;
+}
+
+.button-container span {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(45, 40, 94, 0.56);
+}
+
+.filterByCalendar {
+    display: flex;
+    align-items: center;
+}
+
+.filterByCalendar p {
+    margin: 0 40px 0 30px;
+    color: #1E99C7;
+}
+
+@media (max-width: 400px) {
+    .matchesTabs {
+        margin: 0 0 16px 0;
+    }
+    .button-container {
+        display: flex;
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .matchesTabs button {
+        padding: 11px 14px;
+    }
+    .filterByCalendar p {
+        display: none;
+    }
+    .filterByCalendar {
+        margin-right: 20px;
+    }
+    .button-container button.active {
+        border-width: 3px;
+    }
+    
+}

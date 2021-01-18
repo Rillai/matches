@@ -1,0 +1,48 @@
+.asside-hr {
+    border-color: #F4F7FB;
+    width: 208px;
+    margin-top: 11px;
+    margin-left: -14px;
+}
+
+.asside-block h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.asside-block {
+    padding: 14px 14px;
+    color: white;
+    background: #353942;
+    border-radius: 4px;
+}
+
+.asside-block:first-child {
+    margin-bottom: 10px;
+}
+
+.my-leagues {
+    min-height: 467px;
+}
+
+.countries {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    min-height: 266px;
+}
+
+.countries>div>p {
+    margin: 13px 0;
+}
+
+.scroll-y{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media (max-width: 400px) {
+    .aside{
+        display: none;
+    }
+}

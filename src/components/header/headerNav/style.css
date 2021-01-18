@@ -1,0 +1,22 @@
+.header-nav {
+    margin-left: 39px;
+}
+
+.header-nav a {
+    color: #1E99C7;
+    mix-blend-mode: normal;
+}
+
+.header-nav .active {
+    color: #353942;
+}
+
+.header-nav a:not(:first-child) {
+    margin-left: 69px;
+}
+
+@media (max-width: 400px) {
+    .header-nav {
+        display: none;
+    }
+}

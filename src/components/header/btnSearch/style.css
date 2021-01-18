@@ -1,0 +1,35 @@
+.btn-search{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 3px;
+    margin-right: 18px;
+}
+
+.btn-search img{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.searh{
+    height: 28px;
+    transition: all 0.2s ease 0s;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.493);
+    width: 130px;
+    padding-left: 7px;
+    padding-right: 30px;
+    opacity: 0;
+}
+
+.search-active{
+    opacity: 1;
+}
+@media (max-width: 400px) {
+    .searh{
+        width: 100px;
+    }
+    .btn-search{
+    margin-right: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+.matchesTable {
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 0 18px 16px 13px;
+    width: 100%;
+    min-height: 678px;
+}
+
+.matchesTable table {
+    width: 100%;
+}
+
+.matchesTable .flag {
+    border-bottom: 1px solid rgba(53, 57, 66, 0.25);
+}
+
+.matchesTable .flag td {
+    color: #353942;
+}
+
+.matchesTable .flag img {
+    margin: auto;
+}
+
+.matchesTable td, .matchesTable td a {
+    padding: 11px;
+    color: #1E99C7;
+}
+
+.matchesTable td:nth-child(1) {
+    height: 46px;
+    width: 76px;
+    color: rgba(53, 57, 66, 0.5);
+    text-align: center;
+}
+
+.matchesTable td:nth-child(5) {
+    font-weight: normal;
+    width: 193px;
+    color: rgba(45, 40, 94, 0.56);
+}
+
+.border-right-span {
+    border-right: 1px solid rgba(53, 57, 66, 0.25);
+    padding: 9px 10px;
+}
+
+.border-right {
+    position: relative;
+}
+
+.border-right::after {
+    content: '';
+    height: 33px;
+    width: 1px;
+    right: 0px;
+    top: 9px;
+    position: absolute;
+    background: rgba(53, 57, 66, 0.25);
+}
+
+.favorite {
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .matchesTable td:nth-child(1) {
+        height: 30px;
+        width: 60px;
+        padding: 7px;
+    }
+    .matchesTable {
+        margin: 0 0 16px 0;
+    }
+    .score, .status, .more-information {
+        display: none;
+    }
+}
